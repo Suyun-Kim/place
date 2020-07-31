@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "spring.datasource.validationQuery",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.validationQuery."
+    },
+    {
+      "name": "spring.jpa.naming.physical-strategy",
+      "type": "java.lang.String",
+      "description": "Description for spring.jpa.naming.physical-strategy."
+    }
+  ] }

@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    include: dev-db
+logging:
+  level:
+    root: INFO
+    org.springframework: DEBUG
+  pattern:
+    console: '%clr(%d{HH:mm:ss}){green} %highlight([%-5level]) %clr(%-20.40logger{0}){faint} %clr(:){red} %clr(%m){cyan}%n'
+devtools:
+  livereload:
+    eanbled: true
+  restart:
+    enabled: false
+    exclude: static/**,templates/**
+

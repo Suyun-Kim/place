@@ -1,0 +1,32 @@
+server:
+  port: 8080
+swagger:
+  name: gplace
+  base-url: kr.smartscore.gplace.web
+  version: 1.0.0
+spring:
+  profiles:
+    active: dev
+  http:
+    encoding:
+      fource: true
+  server:
+    error:
+      whitelabel:
+        enable: true
+      include:
+        include-stacktrace: always
+    encoding:
+      charset: UTF-8
+      enabled: true
+  jpa:
+    hibernate.ddl-auto: none
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    database: mysql
+    open-in-view: false
+    properties.hibernate.format_sql: true
+  main:
+    allow-bean-definition-overriding: true

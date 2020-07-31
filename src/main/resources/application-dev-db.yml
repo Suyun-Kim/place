@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    platform: mysql
+    gplace:
+      jdbc-url: jdbc:mysql://127.0.0.1:3307/gplace?serverTimezone=UTC&characterEncoding=UTF-8
+      username: suyunkim
+      password: Tndbs2580!#@
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      testOnBorrow: true
+      validationQuery: SELECT 1
+      continue-on-error: true
+      hikari:
+      maximum-pool-size: 1
